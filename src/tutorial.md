@@ -584,7 +584,7 @@ Things to notice:
      return adoptionInstance.getAdopters.call();
    }).then(function(adopters) {
      for (i = 0; i < adopters.length; i++) {
-       if (adopters[i] !== '0x0000000000000000000000000000000000000000') {
+       if (adopters[i] !== '0x') {
          $('.panel-pet').eq(i).find('button').text('Success').attr('disabled', true);
        }
      }
